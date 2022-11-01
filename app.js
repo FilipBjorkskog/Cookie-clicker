@@ -14,14 +14,28 @@ function countScore() {
     }
     score++
     const src = "./Crunch.mp3"
-const audio = new Audio(src)
-audio.play()
+    const audio = new Audio(src)
+    audio.play()
     console.log(score)
     showScore.textContent = score;
 }
-function removeError(){
+function removeError() {
     document.getElementById('Error').innerText = ""
 }
+
+function cheatButton() {
+    var number = prompt("Enter cheat code:")
+    if (number == "CookieMonster") {
+        score = score + 10000
+        showScore.textContent = score
+    } else {
+        score = score - 1000
+        showScore.textContent = score
+        document.getElementById('Error').innerText = "Don't try -1000"
+
+    }
+}
+
 function doublePoints() {
     if (score < 1000) {
         document.getElementById('Error').innerText = "Error - insufficient funds (Click to clear)"
@@ -45,12 +59,12 @@ function addWorker() {
         worker = true
     }
 }
-var x = document.getElementById("myAudio"); 
-        
-function playAudio() { 
-  x.play(); 
-} 
+var x = document.getElementById("myAudio");
 
-function pauseAudio() { 
-  x.pause(); 
-} 
+function playAudio() {
+    x.play();
+}
+
+function pauseAudio() {
+    x.pause();
+}

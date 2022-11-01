@@ -46,7 +46,6 @@ img:active{
     scale: 1.1;
 }
 .UpgBox{
-    background-color: rgb(248, 192, 118);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -97,4 +96,16 @@ img:active{
 svg{
     width: 20px;
     height: 26px;
+}
+#cht{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 15px;
+    margin-left: 90px;
+    width: 50px;
+    height: 30px;
+    background-color: brown;
+    border-radius: 5px;
+    color: rgb(248, 192, 118);
 }
