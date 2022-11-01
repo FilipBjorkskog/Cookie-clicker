@@ -14,7 +14,7 @@ function countScore() {
     }
     score++
     const audio = new Audio();
-    audio.src = "/Crunch.mp3"
+    audio.src = "Crunch.mp3"
     audio.play();
     console.log(score)
     showScore.textContent = score;
